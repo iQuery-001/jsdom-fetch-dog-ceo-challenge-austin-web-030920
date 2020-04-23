@@ -40,7 +40,7 @@ function addBreeds(json) {
 }
 
 function displayBreeds(list) {
-    const breedsUL = document.getElementById('dog-breeds');
+    const breedsUL = document.getElementById('breeds-list');
     breedsUL.innerHTML = '';
 
     list.forEach((breed) => {

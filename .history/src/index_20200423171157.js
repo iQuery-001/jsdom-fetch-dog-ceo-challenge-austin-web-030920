@@ -25,7 +25,7 @@ function handleJson(json) {
     const list = document.getElementById('dog-image-container');
 
     dogImages.forEach((url, index) => {
-        // console.log('URL', url)
+        console.log('URL', url)
         const img = document.createElement('img');
         img.src = url;
         img.id = `dog_${index}`
@@ -40,7 +40,7 @@ function addBreeds(json) {
 }
 
 function displayBreeds(list) {
-    const breedsUL = document.getElementById('dog-breeds');
+    const breedsUL = document.getElementById('breeds-list');
     breedsUL.innerHTML = '';
 
     list.forEach((breed) => {
